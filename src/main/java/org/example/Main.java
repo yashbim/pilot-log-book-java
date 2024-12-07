@@ -9,7 +9,7 @@ public class Main {
         String pilotID = null;
         String flightRegistration = null;
         int flightTime = 0;
-        addFlight(null, null, 0);
+        addFlight(pilotID, flightRegistration, flightTime);
     }
 
     private static void addFlight(String pilotID, String flightRegistration, int flightTime) {
