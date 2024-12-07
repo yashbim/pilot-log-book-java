@@ -6,6 +6,11 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        addFlight();
+
+    }
+
+    public static void addFlight() {
         Scanner myscanner = new Scanner(System.in);
         System.out.println("Enter Pilot ID");
         String pilotID = myscanner.nextLine();
@@ -18,7 +23,8 @@ public class Main {
 
         System.out.println(
                 "Pilot ID : " + pilotID + "\n" +
-                "Flight Registration : " + flightRegistration + "\n" +
-                "Flight Time : " + flightTime);
+                        "Flight Registration : " + flightRegistration + "\n" +
+                        "Flight Time : " + flightTime);
     }
+
 }
