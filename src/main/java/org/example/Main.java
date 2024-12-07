@@ -6,25 +6,29 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        addFlight();
-
+        String pilotID = null;
+        String flightRegistration = null;
+        int flightTime = 0;
+        addFlight(null, null, 0);
     }
 
-    public static void addFlight() {
+    private static void addFlight(String pilotID, String flightRegistration, int flightTime) {
         Scanner myscanner = new Scanner(System.in);
         System.out.println("Enter Pilot ID");
-        String pilotID = myscanner.nextLine();
+        pilotID = myscanner.nextLine();
         System.out.println("Enter Flight Registration");
-        String flightRegistration = myscanner.nextLine();
+        flightRegistration = myscanner.nextLine();
         System.out.println("Enter Flight Time (Minutes)");
-        int flightTime = myscanner.nextInt();
+        flightTime = myscanner.nextInt();
+//        return pilotID, flightTime, flightRegistration;
 
         // print input
-
         System.out.println(
                 "Pilot ID : " + pilotID + "\n" +
                         "Flight Registration : " + flightRegistration + "\n" +
                         "Flight Time : " + flightTime);
+        System.out.println("Done");
+
     }
 
 }
