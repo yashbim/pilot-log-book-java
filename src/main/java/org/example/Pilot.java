@@ -6,7 +6,11 @@ public class Pilot {
     private int age;
 
     public void setId(String id) {
-        this.id = id;
+        if (id.length() == 36) {
+            this.id = id;
+        } else {
+            this.id = "invalid";
+        }
     }
     public void setName(String name) {
         this.name = name;
